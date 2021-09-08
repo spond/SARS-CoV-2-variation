@@ -10,6 +10,7 @@ This repository contains compressed and anonymized meta data and sequence varian
 1. https://observablehq.com/@spond/sc2-selection-trends
 2. https://observablehq.com/@spond/sc2-temporal-selection-trends
 3. https://observablehq.com/@spond/spike-trends
+4. https://observablehq.com/@spond/sars-cov-2-selected-sites
 
 The contents of the directory are as follows.
 
@@ -17,3 +18,16 @@ The contents of the directory are as follows.
 2. `gene/variants-clear.json` : unique haplotypes variation for a given gene
 3. `gene/duplicates-compressed.json` : sequence identifiers mapping to a unique haplotype
 4. `windowed-sites-fel-*.csv`: site-level selection analysis results (FEL) for GISAID data analyzed in three-month intervals.
+
+The `windowed-sites-fel-current.csv` file contains site-level selection data computed with FEL (3-month windows) and that have been found under selection at least once (p≤0.05). Column headers are as follows
+
+1. `gene` : gene/ORF
+2. `site` : site in gene
+3. `seqs` : number of representative sequences used for analysis
+4. `from` : start of the time interval
+5. `to`: end of the time interval
+6. `p`: p-value for non-neutrality (positve if alpha < beta, negative otherwise)
+7. `alpha` : site MLE estimate for the synonymous rate
+8. `beta` : site MLE estimate for the non-synonymous rate
+9. `T_int`: total length of internal branches in the gene tree used for inference (subs/site)
+10. `T_total`: total length of all branches in the gene tree used for inference (subs/site)
