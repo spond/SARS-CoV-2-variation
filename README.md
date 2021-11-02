@@ -11,6 +11,7 @@ This repository contains compressed and anonymized meta data and sequence varian
 2. https://observablehq.com/@spond/sc2-temporal-selection-trends
 3. https://observablehq.com/@spond/spike-trends
 4. https://observablehq.com/@spond/sars-cov-2-selected-sites
+5. https://observablehq.com/@spond/sc2-prioritization
 
 The contents of the directory are as follows.
 
